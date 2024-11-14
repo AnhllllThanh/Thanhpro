@@ -1,0 +1,11 @@
+[build]
+  functions = "netlify/functions"  # Thư mục chứa các hàm serverless
+
+[dev]
+  functions = "netlify/functions"  # Thư mục chứa các hàm serverless trong môi trường local
+  publish = "public"               # Thư mục chứa các tài sản tĩnh (HTML, CSS, JS, v.v.)
+
+[[redirects]]
+  from = "/api/login"
+  to = "/.netlify/functions/login"
+  status = 200
